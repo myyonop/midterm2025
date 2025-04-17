@@ -42,3 +42,20 @@ tabs.forEach(tab => {
       }
     });
   });
+
+
+// skills
+$('.skill-per').each(function () {
+    var $this = $(this);
+    var per = parseInt($this.attr('per'));
+    $this.animate({ width: per + '%' }, {
+      duration: 1000,
+      step: function (now) {
+        $this.attr('per', Math.floor(now) + '%');
+      },
+      complete: function () {
+        $this.attr('per', per + '%');
+      }
+    });
+  });
+  
