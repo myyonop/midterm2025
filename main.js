@@ -44,18 +44,17 @@ tabs.forEach(tab => {
   });
 
 
-// skills
-$('.skill-per').each(function () {
-    var $this = $(this);
-    var per = parseInt($this.attr('per'));
-    $this.animate({ width: per + '%' }, {
-      duration: 1000,
-      step: function (now) {
-        $this.attr('per', Math.floor(now) + '%');
-      },
-      complete: function () {
-        $this.attr('per', per + '%');
-      }
-    });
-  });
-  
+// work - company
+function toggleContent(titleElement) {
+  const content = titleElement.nextElementSibling;
+
+  if (content.classList.contains("show")) {
+    // 슬라이드 업
+    content.style.maxHeight = 0;
+    content.classList.remove("show");
+  } else {
+    // 슬라이드 다운
+    content.classList.add("show");
+    content.style.maxHeight = content.scrollHeight + 70 + "px";
+  };
+};

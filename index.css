@@ -95,7 +95,6 @@ header {
     display: none;
 }
 
-
 @media screen and (max-width: 768px) {
     .navbar_menu {
         display: none;
@@ -147,8 +146,9 @@ header {
 #aboutme {
     position: relative;
     width: 100%;
-    height: 1600px;
-    margin-top: 100px;
+    height: auto;
+    margin-top: 130px;
+    margin-bottom: 80px;
 }
 
 #aboutme > .profile-section {
@@ -223,14 +223,13 @@ header {
 }
 
 
-/* ----------------------------------------- */
-
 
 /* 자격증란 */
 #aboutme > .certifide {
     clear: both;
     padding : 80px 200px 0 200px;
     text-align: center;
+    margin-bottom: 200px;
 }
 
 #aboutme > .certifide > h2 {
@@ -326,88 +325,13 @@ header {
     color: #aaa;
 }
 
-/* ----------------------------------------------------- */
 
-
-/* 스킬 */
-#aboutme > .skills {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 160px;
-    box-sizing: border-box;
-  }
-  
-  .skills-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .skills-title h2 {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 5px;
-    position: relative;
-  }
-  
-  .skill-name {
-    font-size: 18px;
-    font-weight: 700;
-
-    margin: 20px 0 10px;
-  }
-  
-  .skill-bar {
-    height: 20px;
-    background: #cacaca;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .skill-per {
-    height: 100%;
-    background-color: #2b2b2b;
-    border-radius: 8px;
-    width: 0;
-    transition: 1s linear;
-    position: relative;
-  }
-  
-  .skill-per::before {
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-    white-space: nowrap;
-  }
-  
-  .skill-per::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #000;
-    border-radius: 2px;
-    top: -16px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-  }
-  
 
 @media screen and (max-width: 768px) {
     #aboutme {
         height: auto;
-        margin-top: 50px;
+        margin-top: 90px;
+        margin-bottom: 80px;
         padding: 20px;
     }
 
@@ -511,30 +435,211 @@ header {
     #aboutme > .certifide > .cert-list > .cert-card > .date {
         font-size: 0.85em;
     }
+}
 
-    /* --------------------------------------- */
 
-    .skills-title h2 {
-        font-size: 24px;
-    }
-    
-    .skill-name {
-        font-size: 16px;
-        margin: 16px 0 8px;
-    }
-    
-    .skill-per::before {
-        font-size: 10px;
-        top: -30px;
-    }
-    
-    .skill-per::after {
-        top: -14px;
-    }
+/* ----------------------------------------------------- */
+
+/* work */
+#work {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    margin-bottom: 80px;
+}
+
+#work > .container > .assignment {
+    height: auto;
+    width: auto;
+    margin: 0 200px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+#work > .container > .secon {
+    height: auto;
+    width: auto;
+    margin: 0 200px;
+    padding-bottom: 15px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 20px;
+}
+
+#work > .container > .assignment > .header {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #2b2b2b;
+    border-radius: 20px 20px 0 0;
+}
+
+#work > .container > .secon > .header {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #2b2b2b;
+    border-radius: 20px 20px 0 0;
+}
+
+#work > .container > .assignment > .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#work > .container > .assignment > .content > .content2-left, .content2-right {
+    background-color: #ffffff;
+    border: 2px solid #bcbcbc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 47%;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+#work > .container > .assignment > .content > .content2-left h3, .content2-right h3 {
+    margin-bottom: 10px;
+}
+
+#work > .container > .assignment > .content > .content2-left p, .content2-right p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+  
+#work > .container > .assignment > .content > .content2-left img, .content2-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#work > .container > .assignment > .content > .content2-left img:hover, .content2-right img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#work > .container > .secon > .secon-box > .box-item > .clearfix > .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+    padding-bottom: 30px;
+}
+
+#work > .container > .secon > .secon-box > .box-item > .clearfix > .info-list > .info-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#work > .container > .secon > .secon-box > .box-item > .clearfix > .info-list > .info-row > dt {
+    width: 140px; 
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+#work > .container > .secon > .secon-box > .box-item > .clearfix > .info-list > .info-row > dd {
+    margin: 0;
+    flex: 1;
+}
+
+#work > .container > .secon > .mini-header {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #2b2b2b;
+}
+
+#work > .container > .secon > .booth-box > .company {
+    margin: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+#work > .container > .secon > .booth-box > .company > .title {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #7d7d7d;
+    font-weight: bold;
+}
+
+#work > .container > .secon > .booth-box > .company > .title > h3 {
+    color: white;
+    font-weight: bold;
+}
+  
+#work > .container > .secon > .booth-box > .company > .content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 2rem;
+    transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.3s ease;
+}
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+    padding-bottom: 10px;
+}
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list > .info-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list > .info-row > dt {
+    width: 140px; 
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list > .info-row > dd {
+    margin: 0;
+    flex: 1;
+}
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list > .info-row > dd > p {
+    font-weight: bold;
+}
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list > .info-row > dd > a {
+    color: #000;
+    text-decoration: none;
+}
+
+#work > .container > .secon > .booth-box > .company > .content > .box-item > .clearfix > .info-list > .info-row > dd > a:hover {
+    color: #7d7d7d;
 }
 
 
 
+#work > .container > .secon > .booth-box > .company > .content.show {
+    opacity: 1;
+    padding: 2rem;
+    background-color: white;
+}
+  
+#work > .container > .secon > .booth-box > .company > .content.show > p {
+    margin-bottom: 5px;
+}
+  
+#work > .container > .secon > .write > p {
+    margin: 0 50px;
+    padding: 15px;
+}
 
 
 /* ----------------------------------------------------- */
