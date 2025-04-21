@@ -191,8 +191,8 @@ header {
 
 #aboutme > .profile-section > .content1-left > .img{
     position: absolute;
-    top: 90px;
-    left: 170px;
+    top: 55px;
+    left: 135px;
     z-index: 2;
 }
 
