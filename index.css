@@ -22,8 +22,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 30vh; 
-
+    padding-top: 25vh; 
 }
 
 #home > .container > .center-wrap {
@@ -36,13 +35,18 @@
     color: #2b2b2b;
     text-align: left;
     line-height: 1.1;
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
+    #home {
+        margin-top: 150px;
+    }
     #home > .container > .center-wrap > h1 {
         font-size: 60px;
+        margin-top: 70px;
         padding: 0 20px;
-        text-align: center;
+        text-align: center center;
     }
 }
 
@@ -461,31 +465,16 @@ header {
     margin-bottom: 100px;
 }
 
-#work > .container > .secon {
-    height: auto;
-    width: auto;
-    margin: 0 200px;
-    padding-bottom: 15px;
-    background-color: rgba(240, 240, 240, 0.8);
-    border-radius: 20px;
-}
-
 #work > .container > .assignment > .header {
     text-align: center;
     padding: 15px 0;
     margin-bottom: 20px;
-    color: white;
     background-color: #2b2b2b;
     border-radius: 20px 20px 0 0;
 }
 
-#work > .container > .secon > .header {
-    text-align: center;
-    padding: 15px 0;
-    margin-bottom: 20px;
+#work > .container > .assignment > .header h2 {
     color: white;
-    background-color: #2b2b2b;
-    border-radius: 20px 20px 0 0;
 }
 
 #work > .container > .assignment > .content {
@@ -528,6 +517,28 @@ header {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+#work > .container > .secon {
+    height: auto;
+    width: auto;
+    margin: 0 200px;
+    padding-bottom: 15px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 20px;
+}
+
+#work > .container > .secon > .header {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: #2b2b2b;
+    border-radius: 20px 20px 0 0;
+}
+
+#work > .container > .secon > .header h2 {
+    color: white;
+}
+
 #work > .container > .secon > .secon-box > .box-item > .clearfix > .info-list {
     display: flex;
     flex-direction: column;
@@ -557,8 +568,11 @@ header {
     text-align: center;
     padding: 15px 0;
     margin-bottom: 20px;
-    color: white;
     background-color: #2b2b2b;
+}
+
+#work > .container > .secon > .mini-header h2 {
+    color: white;
 }
 
 #work > .container > .secon > .booth-box > .company {
@@ -659,6 +673,8 @@ header {
     #work > .container > .assignment,
     #work > .container > .secon {
         margin: 0;
+        padding: 0 20px;
+        padding: 20px;
         border-radius: 10px;
     }
 
@@ -726,12 +742,10 @@ header {
 }
 
 #team > .team {
-    transition: transform 0.3s ease;
     margin-bottom: 40px;
 }
 
 #team > .team:hover {
-    transform: scale(1.2);
     font-weight: bold;
 }
   
